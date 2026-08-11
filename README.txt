@@ -1,0 +1,1 @@
+Upload BOTH index.html and the assets folder to the ROOT of your GitHub repository. Keep assets/leith-hero.png exactly in that folder structure.
