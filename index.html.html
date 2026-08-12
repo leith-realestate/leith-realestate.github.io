@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leith Abu Assaf | UAE Real Estate</title>
+<meta name="description" content="Selected properties for sale and rent across the UAE by Leith Abu Assaf.">
+<style>
+:root{
+  --bg:#080605;
+  --bg2:#0d0907;
+  --panel:#120d0b;
+  --panel2:#19110d;
+  --text:#f5eee6;
+  --muted:#b8ada2;
+  --line:#3a2b22;
+  --gold:#cf9657;
+  --gold2:#efc27e;
+  --burg:#5b1718;
+  --burg2:#8d2d26;
+  --shadow:0 30px 80px rgba(0,0,0,.42)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--text);
+  font-family:Inter,Arial,sans-serif;
+  line-height:1.5;
+  overflow-x:hidden;
+  background:
+    radial-gradient(circle at 72% 10%,rgba(141,45,38,.14),transparent 25%),
+    radial-gradient(circle at 16% 26%,rgba(207,150,87,.07),transparent 22%),
+    linear-gradient(180deg,var(--bg) 0%,#090706 44%,#070707 100%);
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1280px;margin:auto;padding:0 28px}
+nav{
+  height:78px;display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:70;
+  background:rgba(8,6,5,.72);backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(239,194,126,.10)
+}
+.brand{font-weight:900;letter-spacing:.15em;font-size:15px}
+.brand em{font-style:normal;color:var(--gold)}
+.nav{display:flex;gap:30px;font-size:14px;color:#d8cec4}
+.nav a{position:relative}
+.nav a:after{content:"";position:absolute;left:0;bottom:-9px;width:0;height:1px;background:var(--gold2);transition:.3s}
+.nav a:hover:after{width:100%}
+.hero{
+  min-height:760px;display:grid;grid-template-columns:.9fr 1.1fr;
+  gap:44px;align-items:center;padding:36px 0 56px;position:relative
+}
+.hero:before{
+  content:"";position:absolute;left:-12%;top:16%;width:360px;height:360px;
+  border:1px solid rgba(207,150,87,.10);border-radius:50%;pointer-events:none
+}
+.kicker{color:var(--gold2);font-size:12px;letter-spacing:.23em;text-transform:uppercase}
+.script{
+  font-family:Georgia,serif;font-style:italic;color:#e27363;
+  font-size:28px;margin-bottom:8px
+}
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(62px,7.4vw,108px);line-height:.88;
+  margin:8px 0 24px;letter-spacing:-.045em;font-weight:700
+}
+.hero h1 .accent{color:var(--gold)}
+.hero p{color:var(--muted);max-width:650px;font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{
+  padding:14px 20px;border:1px solid var(--line);
+  transition:.25s;position:relative;overflow:hidden
+}
+.btn:before{
+  content:"";position:absolute;inset:0;transform:translateX(-110%);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);
+  transition:.5s
+}
+.btn:hover:before{transform:translateX(110%)}
+.btn:hover{transform:translateY(-2px);border-color:#7b6048}
+.btn.primary{background:linear-gradient(135deg,var(--gold),#b5773d);color:#111;border-color:transparent;font-weight:900}
+.heroMedia{
+  height:620px;position:relative;overflow:hidden;
+  border:1px solid rgba(239,194,126,.18);box-shadow:var(--shadow);
+  background:#140d0a
+}
+.heroMedia img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.01)}
+.heroMedia:before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(8,6,5,.10),transparent 32%),
+             linear-gradient(180deg,transparent 48%,rgba(5,4,4,.82) 100%)
+}
+.heroMedia:after{
+  content:"AUTHENTIC  •  TIMELESS";
+  position:absolute;right:24px;top:24px;z-index:2;
+  border:1px solid rgba(239,194,126,.35);border-radius:50%;
+  width:142px;height:142px;display:grid;place-items:center;text-align:center;
+  font-size:11px;letter-spacing:.18em;color:var(--gold2)
+}
+.heroTag{position:absolute;left:28px;bottom:28px;z-index:2}
+.heroTag strong{font-family:Georgia,serif;font-size:26px;display:block}
+.heroTag span{color:#e0d5ca;font-size:13px}
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid rgba(239,194,126,.10);gap:1px;
+  background:rgba(239,194,126,.08)
+}
+.stat{background:rgba(9,7,6,.94);padding:24px;position:relative;overflow:hidden}
+.stat:after{content:"✦";position:absolute;right:18px;top:13px;color:rgba(239,194,126,.18);font-size:22px}
+.stat strong{display:block;font-size:22px}
+section{padding:96px 0;border-top:1px solid rgba(239,194,126,.10)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.head h2{
+  font-family:Georgia,serif;font-size:50px;line-height:1;
+  margin:0;letter-spacing:-.03em
+}
+.head p{max-width:560px;color:var(--muted);margin:0}
+.featured{display:grid;grid-template-columns:1.18fr .82fr;gap:18px;margin-bottom:26px}
+.feature{
+  min-height:350px;border:1px solid rgba(239,194,126,.14);
+  padding:30px;display:flex;flex-direction:column;justify-content:end;
+  background:
+    linear-gradient(180deg,transparent 20%,rgba(6,4,4,.82)),
+    radial-gradient(circle at 80% 20%,rgba(141,45,38,.30),transparent 30%),
+    linear-gradient(145deg,#22120f,#0f0c0b);
+  position:relative;overflow:hidden;transition:.3s
+}
+.feature:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.feature:after{
+  content:"FEATURED";position:absolute;right:18px;top:14px;
+  font-family:Georgia,serif;font-size:54px;font-weight:700;
+  color:rgba(255,255,255,.055)
+}
+.feature h3{font-family:Georgia,serif;font-size:38px;margin:8px 0}
+.feature p{color:#cfc2b7;max-width:600px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}
+.filter,.rentFilter{
+  background:rgba(255,255,255,.015);border:1px solid var(--line);
+  color:#c3b8ad;padding:10px 14px;cursor:pointer;transition:.2s
+}
+.filter.active,.filter:hover,.rentFilter.active,.rentFilter:hover{
+  color:var(--gold2);border-color:var(--gold);background:rgba(207,150,87,.06)
+}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  border:1px solid rgba(239,194,126,.11);
+  background:linear-gradient(180deg,#17100d,#0f0d0c);
+  min-height:410px;display:flex;flex-direction:column;overflow:hidden;
+  transition:.3s;position:relative
+}
+.card:hover{transform:translateY(-7px);border-color:#725840;box-shadow:0 22px 60px rgba(0,0,0,.30)}
+.cover{height:195px;background:linear-gradient(145deg,#231511,#0e0c0b);position:relative;overflow:hidden}
+.cover img{width:100%;height:100%;object-fit:cover;transition:.55s}
+.card:hover .cover img{transform:scale(1.05)}
+.cover.placeholder:before{
+  content:"";position:absolute;inset:0;
+  background:
+   radial-gradient(circle at 20% 20%,rgba(207,150,87,.10),transparent 20%),
+   radial-gradient(circle at 78% 36%,rgba(91,23,24,.18),transparent 28%)
+}
+.cover.placeholder:after{
+  content:"LEITH REAL ESTATE";position:absolute;left:18px;bottom:14px;
+  color:rgba(255,255,255,.17);font-size:20px;font-weight:900;letter-spacing:.10em
+}
+.body{padding:22px;display:flex;flex:1;flex-direction:column}
+.tag{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--gold2)}
+.card h3{font-family:Georgia,serif;font-size:26px;margin:10px 0 4px}
+.loc{font-size:14px;color:var(--muted)}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:17px;font-size:13px;color:#cfc2b8}
+.meta div{border-top:1px solid var(--line);padding-top:8px}
+.price{font-size:27px;font-weight:900;margin-top:auto;padding-top:24px}
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:17px}
+.links a,.galleryBtn{font-size:13px;color:var(--gold2);background:none;border:0;padding:0;cursor:pointer}
+.rentHero{display:grid;grid-template-columns:1.06fr .94fr;gap:18px;margin-bottom:26px}
+.rentHero .photo{min-height:420px;border:1px solid rgba(239,194,126,.12);overflow:hidden;box-shadow:var(--shadow)}
+.rentHero img{width:100%;height:100%;object-fit:cover}
+.rentIntro{
+  border:1px solid rgba(239,194,126,.12);padding:34px;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(91,23,24,.18),transparent 30%),
+    linear-gradient(145deg,#17100d,#0e0d0c);
+  display:flex;flex-direction:column;justify-content:center
+}
+.rentIntro h3{font-family:Georgia,serif;font-size:40px;margin:8px 0 14px}
+.rentIntro p{color:var(--muted)}
+.rentGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rentCard{
+  border:1px solid rgba(239,194,126,.11);padding:22px;background:linear-gradient(180deg,#15100e,#0f0d0c);
+  transition:.25s
+}
+.rentCard:hover{transform:translateY(-5px);border-color:#70563e}
+.rentCard h3{font-family:Georgia,serif;margin:8px 0 4px;font-size:24px}
+.rentCard .rentPrice{font-size:25px;font-weight:900;margin:18px 0}
+.rentMeta{display:grid;grid-template-columns:1fr 1fr;gap:9px;font-size:13px;color:#c9bdb3}
+.rentMeta div{border-top:1px solid var(--line);padding-top:8px}
+.tour{display:inline-block;margin-top:18px;padding:10px 13px;border:1px solid var(--gold);color:var(--gold2);font-size:13px}
+.about{display:grid;grid-template-columns:.78fr 1.22fr;gap:66px;align-items:start}
+.about h2{font-family:Georgia,serif;font-size:50px;margin:0}
+.about p{color:var(--muted);font-size:17px}
+.quote{border-left:2px solid var(--gold);padding-left:18px;margin-top:24px;color:var(--soft);font-family:Georgia,serif;font-size:22px}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.contact>div{border:1px solid rgba(239,194,126,.11);padding:30px;background:linear-gradient(180deg,#15100e,#0f0d0c)}
+.contact a{color:var(--gold2)}
+.float{
+  position:fixed;right:22px;bottom:22px;z-index:70;
+  background:linear-gradient(135deg,var(--gold2),var(--gold));
+  color:#111;font-weight:900;padding:13px 17px;border-radius:999px;
+  box-shadow:0 16px 34px rgba(0,0,0,.35)
+}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.show{opacity:1;transform:none}
+.card.revealCard{opacity:0;transform:translateY(18px);animation:rise .7s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.open{display:flex}
+.modalBox{max-width:1000px;width:100%;background:#0d0a09;border:1px solid var(--line);padding:16px;position:relative}
+.modalBox img{width:100%;max-height:76vh;object-fit:contain}
+.close{position:absolute;right:12px;top:8px;border:0;background:var(--gold2);color:#111;font-weight:900;width:34px;height:34px;border-radius:50%;cursor:pointer}
+.galleryNav{display:flex;justify-content:space-between;margin-top:10px}
+.galleryNav button{background:none;border:1px solid var(--line);color:#ddd;padding:9px 14px;cursor:pointer}
+footer{padding:30px 0;color:#8c8178;font-size:13px;display:flex;justify-content:space-between;border-top:1px solid rgba(239,194,126,.08)}
+.cursorGlow{
+  position:fixed;left:0;top:0;width:260px;height:260px;border-radius:50%;
+  pointer-events:none;z-index:0;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(207,150,87,.07),transparent 66%);
+  filter:blur(10px)
+}
+@media(max-width:900px){
+  .nav{display:none}.hero,.featured,.rentHero,.about{grid-template-columns:1fr}
+  .hero{min-height:auto;padding:56px 0}.heroMedia{height:520px}
+  .heroMedia:after{width:104px;height:104px;font-size:9px;right:14px;top:14px}
+  .stats{grid-template-columns:1fr 1fr}.grid,.rentGrid,.contact{grid-template-columns:1fr}
+  .head{display:block}.head h2{margin-bottom:12px}.feature:after{font-size:34px}
+  .wrap{padding:0 18px}.cursorGlow{display:none}
+}
+</style>
+</head>
+<body><div class="cursorGlow" id="cursorGlow"></div>
+<a class="float" href="https://wa.me/971588821158" target="_blank">WhatsApp</a>
+<div class="wrap">
+<nav><a class="brand" href="#">LEITH <em>ABU ASSAF</em></a><div class="nav"><a href="#sale">For Sale</a><a href="#rent">For Rent</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero reveal">
+<div><div class="script">Hi, I’m Leith.</div><div class="kicker">UAE Real Estate Consultant</div><h1>Creating<br><span class="accent">impact.</span><br>Building trust.</h1><p>Premium real estate, presented with clarity and personality — ready, resale, off-plan and rental properties across the UAE.</p><div class="actions"><a class="btn primary" href="#sale">Explore For Sale</a><a class="btn" href="#rent">Explore Rentals</a><a class="btn" href="https://wa.me/971588821158" target="_blank">WhatsApp Me</a></div></div>
+<div class="heroMedia"><img src="assets/leith-hero.png" alt="Leith Abu Assaf"><div class="heroTag"><strong>LEITH ABU ASSAF</strong><span>Ready • Resale • Off Plan • Rentals</span></div></div>
+</header>
+
+<section style="padding:28px 0" class="reveal"><div class="stats"><div class="stat"><div class="kicker">For Sale</div><strong>19 Units</strong></div><div class="stat"><div class="kicker">For Rent</div><strong>17 Units</strong></div><div class="stat"><div class="kicker">Market</div><strong>Dubai & UAE</strong></div><div class="stat"><div class="kicker">Contact</div><strong>Direct WhatsApp</strong></div></div></section>
+
+<section id="sale" class="reveal">
+<div class="head"><div><div class="kicker">Curated Inventory</div><h2>Properties for Sale</h2></div><p>Ready, resale and off-plan options. Prices and availability can change; contact me for the latest status and negotiation.</p></div>
+<div class="featured"><div class="feature"><div class="kicker">Hot Deal</div><h3>Binghatti Elite</h3><p>Brand new studio • 377.38 SQFT • High Floor • Community View • Handover in 2 Months • AED 600,000</p></div><div class="feature"><div class="kicker">Ready Value</div><h3>Alexis Tower</h3><p>Studio in Jebel Ali Industrial Second • 368 SQFT • Reportage Prime Properties • AED 600,000</p></div></div>
+<div class="filters"><button class="filter active" data-f="all">All</button><button class="filter" data-f="ready">Ready</button><button class="filter" data-f="offplan">Off Plan</button><button class="filter" data-f="studio">Studio</button><button class="filter" data-f="1br">1 BR</button><button class="filter" data-f="2br">2 BR</button><button class="filter" data-f="villa">Villa</button></div>
+<div class="grid" id="saleGrid"></div>
+</section>
+
+<section id="rent" class="reveal">
+<div class="head"><div><div class="kicker">Rental Inventory</div><h2>For Rent</h2></div><p>Available units in Dubai Residence Complex, Dubailand. Studio, furnished studio, 1-bedroom and 2-bedroom options.</p></div>
+<div class="rentHero"><div class="photo"><img src="assets/rent/rent-bedroom.jpeg" alt="Furnished rental interior"></div><div class="rentIntro"><div class="kicker">Dubai Residence Complex</div><h3>Ready rental options.</h3><p>Vacant units, furnished choices and 3D virtual tours for the larger apartments. Filter below by unit type and contact me directly for viewing.</p><div class="actions"><a class="btn primary" href="https://wa.me/971588821158?text=Hi%20Leith%2C%20I%27m%20interested%20in%20your%20Dubai%20Residence%20Complex%20rentals." target="_blank">Ask About Rentals</a></div></div></div>
+<div class="filters"><button class="rentFilter active" data-r="all">All Rentals</button><button class="rentFilter" data-r="studio">Studio</button><button class="rentFilter" data-r="furnished">Furnished Studio</button><button class="rentFilter" data-r="1br">1 Bedroom</button><button class="rentFilter" data-r="2br">2 Bedroom</button></div>
+<div class="rentGrid" id="rentGrid"></div>
+</section>
+
+<section id="about" class="reveal"><div class="about"><div><div class="kicker">Personal Brand</div><h2>Leith Abu Assaf</h2></div><div><p>I work with buyers, investors and tenants looking for the right property across the UAE.</p><p>My focus is clear inventory, practical comparisons, direct communication and presenting every unit in a way that makes the next decision easier.</p><div class="quote">Personal service. Serious inventory. Clear decisions.</div></div></div></section>
+
+<section id="contact" class="reveal"><div class="head"><div><div class="kicker">Contact</div><h2>Let’s Talk</h2></div><p>Send your budget, preferred area and property type and I’ll share suitable options.</p></div><div class="contact"><div><h3>WhatsApp</h3><a href="https://wa.me/971588821158" target="_blank">+971 58 882 1158</a></div><div><h3>Email</h3><a href="mailto:leith.realestate1@gmail.com">leith.realestate1@gmail.com</a></div><div><h3>Instagram</h3><a href="https://www.instagram.com/leithabuassaf1/" target="_blank">@leithabuassaf1</a></div></div></section>
+<footer><span>© 2026 Leith Abu Assaf</span><span>UAE Real Estate</span></footer>
+</div>
+
+<div class="modal" id="modal"><div class="modalBox"><button class="close" id="closeModal">×</button><img id="modalImg" alt="Property image"><div class="galleryNav"><button id="prevImg">← Previous</button><button id="nextImg">Next →</button></div></div></div>
+
+<script>
+const sales=[{"project": "Binghatti Corner", "location": "JVC - Jumeirah Village Circle", "unit": "717", "beds": "1 BR", "payment": "Fully Paid • 1 Year Service Charge Waiver", "view": "Pool View", "size": "707 SQFT", "price": "AED 890,000", "status": "Ready • Vacant", "developer": "Binghatti", "link": "https://drive.google.com/drive/folders/1OKFBGH-l6h64WbVX0zdHXcl2VL4Plbno?usp=sharing", "cat": "ready"}, {"project": "Binghatti Tulip", "location": "JVC - Jumeirah Village Circle", "unit": "1305", "beds": "2 Royal Suite", "payment": "Fully Paid • 1 Year Service Charge Waiver", "view": "Corner • Partial Five Jumeirah Hotel • Parks • Community • Amenities", "size": "1,140.22 SQFT", "price": "AED 1,650,000", "status": "Ready", "developer": "Binghatti", "link": "https://drive.google.com/drive/folders/1OtfcbbsC45ACI916VlSQRafYGBY8YuQF", "cat": "ready"}, {"project": "Azizi Riviera 46", "location": "Meydan", "unit": "905", "beds": "Studio", "payment": "Fully Paid", "view": "Boulevard View", "size": "301.93 SQFT", "price": "AED 675,000", "status": "Ready • Tenanted AED 50K", "developer": "Azizi", "link": "https://drive.google.com/drive/folders/1_iFex3MtmStTORaOfCvmTfhOR_E6M-ye", "cat": "ready"}, {"project": "Zada Tower by DAMAC", "location": "Business Bay", "unit": "2113", "beds": "1 BR", "payment": "Fully Paid", "view": "Pool & Canal View", "size": "471.35 SQFT", "price": "AED 1,025,000", "status": "Ready • Vacant", "developer": "DAMAC", "link": "https://drive.google.com/drive/folders/13VgJ6TMsPrFVtbe3VzYK4elPVnczF1Py", "cat": "ready"}, {"project": "Dusk by Binghatti", "location": "JVC - Jumeirah Village Circle", "unit": "211", "beds": "Studio", "payment": "30% Paid • 70% on Handover", "view": "Community View", "size": "449.82 SQFT", "price": "AED 720,000", "status": "Ready to Move", "developer": "Binghatti", "link": "https://drive.google.com/drive/folders/1r9C9URPRSrjOa_V9U6RhqMPgtc0NQCFp", "cat": "ready"}, {"project": "Binghatti Tulip", "location": "JVC - Jumeirah Village Circle", "unit": "905", "beds": "2 Royal Suite", "payment": "Fully Paid • 1 Year Service Charge Waiver", "view": "Corner • Partial Five Jumeirah Hotel • Parks • Community • Amenities", "size": "1,140.22 SQFT", "price": "AED 1,450,000", "status": "Ready", "developer": "Binghatti", "link": "https://drive.google.com/drive/folders/1OtfcbbsC45ACI916VlSQRafYGBY8YuQF", "cat": "ready"}, {"project": "Seven City JLT", "location": "JLT - Jumeirah Lake Towers", "unit": "A 830", "beds": "1 BR", "payment": "50% Paid • OP AED 711,702 • 24 Months Post Handover", "view": "Dubai Marina & Sheikh Zayed Road View", "size": "739 SQFT", "price": "AED 1,075,000", "status": "Off Plan", "developer": "Seven Tides", "link": "https://drive.google.com/drive/folders/1bBWXG13fSfeJLwxlVcsDOWzIYc3auKnS", "cat": "offplan"}, {"project": "The Highbury", "location": "Sobha Hartland I", "unit": "1314", "beds": "Studio", "payment": "45% Paid • OP AED 959,828", "view": "Community View", "size": "425.82 SQFT", "price": "AED 1,100,000", "status": "Off Plan", "developer": "Ellington", "link": "https://drive.google.com/drive/folders/1wfKQvuSVPrIuAhUQ9dCay60WnLnKxyEu", "cat": "offplan"}, {"project": "DAMAC Towers by Paramount D", "location": "Business Bay", "unit": "D 1806", "beds": "1 BR", "payment": "Fully Paid", "view": "Pool View", "size": "1,055.29 SQFT", "price": "AED 1,450,000", "status": "Ready • Tenanted AED 120K", "developer": "DAMAC", "link": "https://drive.google.com/drive/folders/1DQjE7SdosdkyA_4K-fCYjGovSJiLZ2Ky", "cat": "ready"}, {"project": "Creek Crescent", "location": "Dubai Creek Harbour", "unit": "407", "beds": "1 BR", "payment": "Fully Paid", "view": "Pool View", "size": "668 SQFT", "price": "AED 1,750,000", "status": "Ready • Tenanted AED 130K", "developer": "Emaar", "link": "https://drive.google.com/drive/folders/1fEdVnXouw4UeGTFp8LybeKOYvO1pdfxL", "cat": "ready"}, {"project": "Ellington View II", "location": "Ras Al Khaimah", "unit": "W 307", "beds": "1 BR", "payment": "20% Paid • OP AED 2,197,828", "view": "Sea View", "size": "1,121.17 SQFT", "price": "AED 2,400,000", "status": "Off Plan • Q3 2027", "developer": "Ellington", "link": "https://drive.google.com/drive/folders/1Rg4yYE-NTvRMG_74j8nlJjxs_43EFr9R", "cat": "offplan"}, {"project": "Upper House East", "location": "JLT - Jumeirah Lake Towers", "unit": "E 1705", "beds": "Studio", "payment": "45% Paid • OP AED 1,054,828", "view": "Dubai Marina & Sheikh Zayed Road View", "size": "459.73 SQFT", "price": "AED 1,200,000", "status": "Off Plan • Q4 2027", "developer": "Ellington", "link": "https://drive.google.com/drive/folders/1Bs5q1jmj3SsF33DvHL4D_8r7aT3m67T3", "cat": "offplan"}, {"project": "Hera Tower", "location": "Dubai Sports City", "unit": "612", "beds": "1 BR", "payment": "Fully Paid", "view": "Community View", "size": "759.72 SQFT", "price": "AED 920,000", "status": "Ready • Tenanted AED 55K", "developer": "Titans", "link": "https://drive.google.com/drive/folders/1WbQxvEzGcd0Kn8dLa98soumq6Y3r_Ehu", "cat": "ready"}, {"project": "Tiraz 1", "location": "Naseej District - Sharjah", "unit": "1602", "beds": "1 BR", "payment": "60% Paid • OP AED 578,000", "view": "Community View", "size": "692 SQFT", "price": "AED 720,000", "status": "Ready • Vacant", "developer": "Arada", "link": "https://drive.google.com/drive/folders/1dCiSHbIaQg4-4RMai-PxbCmTTTCFucvG", "cat": "ready"}, {"project": "Nasayem Avenue 1", "location": "Mirdif", "unit": "A 213 G", "beds": "2 BR", "payment": "Fully Paid", "view": "Community View", "size": "1,341.94 SQFT", "price": "AED 1,600,000", "status": "Ready • Tenanted AED 95K", "developer": "Dubai Investments", "link": "https://drive.google.com/drive/folders/1SxLu5MZv80pxYarQQWLVy0c7d2iwdQ2h", "cat": "ready"}, {"project": "Multaqa Avenue 4", "location": "Mirdif", "unit": "D 117 G", "beds": "Studio", "payment": "Fully Paid", "view": "Community View", "size": "688.24 SQFT", "price": "AED 900,000", "status": "Ready • Tenanted AED 65K", "developer": "Dubai Investments", "link": "https://drive.google.com/drive/folders/14n8Svu6qu1QkXD-BckNEL4L0q_4k4yS9", "cat": "ready"}, {"project": "Masaar 1", "location": "Tilal City - Sharjah", "unit": "G4 - V214", "beds": "4 BR Villa", "payment": "30% Paid • 70% on Handover", "view": "Community View", "size": "4,903 SQFT", "price": "AED 5,443,000", "status": "Off Plan • Q4 2026", "developer": "Arada", "link": "https://drive.google.com/drive/folders/1fK0R571YAoDGB_l-nBXwKhiHXyA5_6vj?usp=sharing", "cat": "offplan"}, {"project": "Alexis Tower", "location": "Jebel Ali Industrial Second", "unit": "—", "beds": "Studio", "payment": "Ready / Resale", "view": "—", "size": "368 SQFT", "price": "AED 600,000", "status": "For Sale", "developer": "Reportage Prime Properties", "link": "", "cat": "ready", "gallery": "alexis"}, {"project": "Binghatti Elite", "location": "Dubai Production City (IMPZ)", "unit": "—", "beds": "Studio", "payment": "Brand New • Handover in 2 Months", "view": "Community View • High Floor", "size": "377.38 SQFT", "price": "AED 600,000", "status": "Handover Soon", "developer": "Binghatti", "link": "", "cat": "offplan", "gallery": "binghatti"}];
+const rentals=[{"unit": "108 A", "type": "Studio", "size": "520 SQFT", "rent": "AED 45,000 / year", "deposit": "5%", "admin": "AED 265", "gas": "AED 700 / year", "remarks": "Vacant • No Ejari", "group": "studio"}, {"unit": "307 A", "type": "Studio", "size": "520 SQFT", "rent": "AED 45,000 / year", "deposit": "5%", "admin": "AED 265", "gas": "AED 700 / year", "remarks": "Vacant • No Ejari", "group": "studio"}, {"unit": "601 A", "type": "Studio", "size": "520 SQFT", "rent": "AED 45,000 / year", "deposit": "5%", "admin": "AED 265", "gas": "AED 700 / year", "remarks": "Vacant • No Ejari", "group": "studio"}, {"unit": "707 A", "type": "Studio", "size": "520 SQFT", "rent": "AED 45,000 / year", "deposit": "5%", "admin": "AED 265", "gas": "AED 700 / year", "remarks": "Vacant • No Ejari", "group": "studio"}, {"unit": "907 B", "type": "Studio", "size": "620 SQFT", "rent": "AED 47,000 / year", "deposit": "5%", "admin": "AED 265", "gas": "AED 700 / year", "remarks": "Vacant", "group": "studio"}, {"unit": "908 B", "type": "Studio", "size": "620 SQFT", "rent": "AED 47,000 / year", "deposit": "5%", "admin": "AED 265", "gas": "AED 700 / year", "remarks": "Vacant", "group": "studio"}, {"unit": "308 A", "type": "Furnished Studio", "size": "520 SQFT", "rent": "AED 56,000 / year", "deposit": "10%", "admin": "AED 265", "gas": "Included", "remarks": "Gas & DEWA Included • No Ejari", "group": "furnished"}, {"unit": "401 A", "type": "Furnished Studio", "size": "520 SQFT", "rent": "AED 56,000 / year", "deposit": "10%", "admin": "AED 265", "gas": "Included", "remarks": "Gas & DEWA Included • No Ejari", "group": "furnished"}, {"unit": "514 A", "type": "Furnished Studio", "size": "520 SQFT", "rent": "AED 58,000 / year", "deposit": "10%", "admin": "AED 265", "gas": "Included", "remarks": "Gas & DEWA Included • No Ejari", "group": "furnished"}, {"unit": "807 A", "type": "Furnished Studio", "size": "520 SQFT", "rent": "AED 56,000 / year", "deposit": "10%", "admin": "AED 265", "gas": "Included", "remarks": "Gas & DEWA Included • No Ejari", "group": "furnished"}, {"unit": "101", "type": "Furnished 1 Bedroom", "size": "1,150 SQFT", "rent": "AED 70,000 / year", "deposit": "10%", "admin": "AED 370", "gas": "AED 1,000 / year", "remarks": "Vacant", "group": "1br", "tour": "https://my.matterport.com/show/?m=czcuxsc2928dk8089erre9awd&play=1&ss=4&sr=-3.04,.51"}, {"unit": "105", "type": "2 Bedroom", "size": "1,250 SQFT", "rent": "AED 80,000 / year", "deposit": "5%", "admin": "AED 475", "gas": "AED 1,200 / year", "remarks": "Vacant", "group": "2br", "tour": "https://my.matterport.com/show/?m=aw0myfmnc1rgsrnqyrq7sdgcd&play=1&ss=9&sr=-.13,.62"}, {"unit": "112", "type": "2 Bedroom", "size": "1,250 SQFT", "rent": "AED 80,000 / year", "deposit": "5%", "admin": "AED 475", "gas": "AED 1,200 / year", "remarks": "Vacant", "group": "2br", "tour": "https://my.matterport.com/show/?m=aw0myfmnc1rgsrnqyrq7sdgcd&play=1&ss=9&sr=-.13,.62"}, {"unit": "210", "type": "2 Bedroom", "size": "1,250 SQFT", "rent": "AED 80,000 / year", "deposit": "5%", "admin": "AED 475", "gas": "AED 1,200 / year", "remarks": "Vacant", "group": "2br", "tour": "https://my.matterport.com/show/?m=aw0myfmnc1rgsrnqyrq7sdgcd&play=1&ss=9&sr=-.13,.62"}, {"unit": "305", "type": "2 Bedroom", "size": "1,250 SQFT", "rent": "AED 80,000 / year", "deposit": "5%", "admin": "AED 475", "gas": "AED 1,200 / year", "remarks": "Vacant", "group": "2br", "tour": "https://my.matterport.com/show/?m=aw0myfmnc1rgsrnqyrq7sdgcd&play=1&ss=9&sr=-.13,.62"}, {"unit": "605", "type": "2 Bedroom", "size": "1,250 SQFT", "rent": "AED 80,000 / year", "deposit": "5%", "admin": "AED 475", "gas": "AED 1,200 / year", "remarks": "Vacant", "group": "2br", "tour": "https://my.matterport.com/show/?m=aw0myfmnc1rgsrnqyrq7sdgcd&play=1&ss=9&sr=-.13,.62"}, {"unit": "905", "type": "2 Bedroom", "size": "1,250 SQFT", "rent": "AED 80,000 / year", "deposit": "5%", "admin": "AED 475", "gas": "AED 1,200 / year", "remarks": "Vacant", "group": "2br", "tour": "https://my.matterport.com/show/?m=aw0myfmnc1rgsrnqyrq7sdgcd&play=1&ss=9&sr=-.13,.62"}];
+const alexisGallery=["assets/alexis/alexis-01.jpeg", "assets/alexis/alexis-02.jpeg", "assets/alexis/alexis-03.jpeg", "assets/alexis/alexis-04.jpeg", "assets/alexis/alexis-05.jpeg", "assets/alexis/alexis-06.jpeg", "assets/alexis/alexis-07.jpeg", "assets/alexis/alexis-08.jpeg", "assets/alexis/alexis-09.jpeg"];
+const binghattiGallery=["assets/binghatti-elite/floorplan-floor.jpeg","assets/binghatti-elite/floorplan-unit.jpeg"];
+const saleGrid=document.getElementById("saleGrid"),rentGrid=document.getElementById("rentGrid");
+function bedKey(b){const x=b.toLowerCase();if(x.includes("studio"))return"studio";if(x.includes("villa"))return"villa";if(x.startsWith("2"))return"2br";if(x.startsWith("1"))return"1br";return""}
+function coverFor(p){if(p.gallery==="alexis")return alexisGallery[0];if(p.gallery==="binghatti")return binghattiGallery[0];return""}
+function renderSale(f="all"){saleGrid.innerHTML=sales.filter(p=>f==="all"||p.cat===f||bedKey(p.beds)===f).map((p,i)=>{const c=coverFor(p);return `<article class="card revealCard"><div class="cover ${c?'':'placeholder'}">${c?`<img src="${c}" alt="${p.project}">`:''}</div><div class="body"><div class="tag">${p.status} • ${p.beds}</div><h3>${p.project}</h3><div class="loc">${p.location}${p.unit&&p.unit!=="—"?` • Unit ${p.unit}`:""}</div><div class="meta"><div><strong>Size</strong><br>${p.size}</div><div><strong>Developer</strong><br>${p.developer}</div><div><strong>View</strong><br>${p.view}</div><div><strong>Payment</strong><br>${p.payment}</div></div><div class="price">${p.price}</div><div class="links">${p.link?`<a href="${p.link}" target="_blank">Media / Floor Plan →</a>`:""}${p.gallery?`<button class="galleryBtn" onclick="openGallery('${p.gallery}')">View Gallery →</button>`:""}<a href="https://wa.me/971588821158?text=${encodeURIComponent(`Hi Leith, I'm interested in ${p.project} - ${p.price}`)}" target="_blank">WhatsApp →</a></div></div></article>`}).join("")}
+function renderRent(f="all"){rentGrid.innerHTML=rentals.filter(r=>f==="all"||r.group===f).map(r=>`<article class="rentCard revealCard"><div class="tag">${r.type}</div><h3>Unit ${r.unit}</h3><div class="loc">Dubai Residence Complex • Dubailand</div><div class="rentPrice">${r.rent}</div><div class="rentMeta"><div><strong>Size</strong><br>${r.size}</div><div><strong>Deposit</strong><br>${r.deposit}</div><div><strong>Admin Fee</strong><br>${r.admin}</div><div><strong>Gas</strong><br>${r.gas}</div></div><p style="color:var(--muted);font-size:13px">${r.remarks}</p>${r.tour?`<a class="tour" href="${r.tour}" target="_blank">3D Virtual Tour →</a>`:""}<div class="links"><a href="https://wa.me/971588821158?text=${encodeURIComponent(`Hi Leith, I'm interested in rental Unit ${r.unit} - ${r.type} - ${r.rent}`)}" target="_blank">WhatsApp →</a></div></article>`).join("")}
+document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderSale(b.dataset.f)});
+document.querySelectorAll(".rentFilter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".rentFilter").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderRent(b.dataset.r)});
+renderSale();renderRent();
+document.querySelectorAll(".revealCard").forEach((el,i)=>el.style.animationDelay=`${Math.min(i,8)*70}ms`);
+
+let gallery=[],gi=0;const modal=document.getElementById("modal"),modalImg=document.getElementById("modalImg");
+window.openGallery=function(type){gallery=type==="alexis"?alexisGallery:binghattiGallery;gi=0;modalImg.src=gallery[0];modal.classList.add("open")}
+document.getElementById("closeModal").onclick=()=>modal.classList.remove("open");
+document.getElementById("nextImg").onclick=()=>{gi=(gi+1)%gallery.length;modalImg.src=gallery[gi]};
+document.getElementById("prevImg").onclick=()=>{gi=(gi-1+gallery.length)%gallery.length;modalImg.src=gallery[gi]};
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove("open")};
+
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.1});
+document.querySelectorAll(".reveal").forEach(e=>obs.observe(e));
+</script>
+<script>
+const glow=document.getElementById("cursorGlow");
+window.addEventListener("pointermove",e=>{glow.style.left=e.clientX+"px";glow.style.top=e.clientY+"px"});
+</script>
+</body></html>
